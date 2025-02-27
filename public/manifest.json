@@ -1,0 +1,12 @@
+{
+    "name": "DM Board",
+    "version": "0.0.1",
+    "manifest_version": 1,
+    "action": {
+        "title": "DM Board",
+        "icon": "/favicon.ico",
+        "popover": "/",
+        "height": 220,
+        "width": 600
+    }
+}

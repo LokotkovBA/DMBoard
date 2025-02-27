@@ -1,0 +1,38 @@
+{
+    "name": "dm-board",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier . --check",
+        "format:fix": "prettier . --write",
+        "build": "nuxt build",
+        "dev": "nuxt dev --host",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@nuxt/eslint": "1.1.0",
+        "@nuxtjs/tailwindcss": "6.13.1",
+        "@owlbear-rodeo/sdk": "^3.1.0",
+        "@pinia/nuxt": "0.10.1",
+        "@uploadthing/nuxt": "^7.1.7",
+        "eslint": "^9.21.0",
+        "nuxt": "^3.15.4",
+        "nuxt-security": "2.1.5",
+        "pinia": "^3.0.1",
+        "sass": "^1.85.1",
+        "uploadthing": "^7.5.2",
+        "vue": "latest",
+        "vue-router": "latest",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/eslint-config-prettier": "^6.11.3",
+        "eslint-config-prettier": "^10.0.2",
+        "prettier": "^3.5.2",
+        "prettier-plugin-tailwindcss": "^0.6.11"
+    }
+}
