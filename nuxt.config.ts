@@ -16,16 +16,18 @@ export default defineNuxtConfig({
         uploadthingToken: process.env.UPLOADTHING_TOKEN,
     },
 
-    security: {
-        corsHandler: {
-            origin: 'https://www.owlbear.rodeo',
-        },
-    },
-
     nitro: {
         preset: 'netlify-edge',
         replace: {
             'typeof window': '`undefined`',
+        },
+    },
+
+    vite: {
+        server: {
+            cors: {
+                origin: 'https://www.owlbear.rodeo',
+            },
         },
     },
 });
