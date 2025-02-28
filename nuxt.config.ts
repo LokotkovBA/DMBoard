@@ -24,4 +24,11 @@ export default defineNuxtConfig({
     devServer: {
         cors: { origin: ['https://www.owlbear.rodeo'] },
     },
+
+    nitro: {
+        preset: 'netlify-edge',
+        replace: {
+            'typeof window': '`undefined`',
+        },
+    },
 });
