@@ -16,6 +16,14 @@ export default defineNuxtConfig({
         uploadthingToken: process.env.UPLOADTHING_TOKEN,
     },
 
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                'frame-ancestors': 'https://www.owlbear.rodeo',
+            },
+        },
+    },
+
     nitro: {
         preset: 'netlify-edge',
         replace: {
